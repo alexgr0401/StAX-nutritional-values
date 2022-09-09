@@ -13,8 +13,8 @@ public class Main {
 	public static void main(String[] args) throws SAXException, IOException, ParserConfigurationException,
 			XPathExpressionException, XMLStreamException {
 
-		String xmlFilePath = "res/Food-Nutrition.xml";
-		String jsonPath = "res/Food-Nutrition.json";
+		String xmlFilePath = "res/Nutrition-Values.xml";
+		String jsonPath = "res/Nutrition-Values.json";
 
 		XMLReader xmlReader = new XMLReader(xmlFilePath);
 		xmlReader.process();
@@ -24,6 +24,6 @@ public class Main {
 		JsonWriter jsonWriter = new JsonWriter(nutrition, jsonPath);
 		jsonWriter.process();
 
-		System.out.println("\"Food-Nutrition.json\" file has been created");
+		System.out.println("\"Nutrition-Values.json\" file has been created");
 	}
 }
