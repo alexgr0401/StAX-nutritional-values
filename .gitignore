@@ -1,6 +1,6 @@
+.classpath
 .idea
 bin/
-build/
 
 # Compiled class file
 *.class
